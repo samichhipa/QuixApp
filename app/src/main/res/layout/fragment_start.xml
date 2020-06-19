@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StartFragment"
+    android:background="@color/darkColor">
+
+    <TextView
+        android:fontFamily="@font/cd_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:text="Quiz App"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <com.iitr.kaishu.nsidedprogressbar.NSidedProgressBar
+            android:id="@+id/NSidedProgressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:nsidedProg_baseSpeed="5"
+            app:nsidedProg_sideCount="3"
+            app:nsidedProg_clockwise="true"
+            app:nsidedProg_secondaryColor="@color/colorPrimary"
+            />
+        <TextView
+            android:fontFamily="@font/cd"
+            android:id="@+id/start_txt"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Create Account"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
